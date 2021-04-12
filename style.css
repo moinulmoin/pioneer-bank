@@ -1,0 +1,71 @@
+body {
+  padding: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+.login-form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.submit-area {
+  margin-top: 50px;
+  padding: 40px;
+  /* border: 1px solid dimgray; */
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.submit-area input {
+  margin: 20px 0px;
+  padding: 1.5em 1em;
+  border-radius: 5px;
+}
+
+.submit-area button {
+  box-shadow: 2px 2px 5px gray;
+  padding: 0.75em 0.75em;
+}
+
+#login-area {
+  display: block;
+}
+
+#transaction-area {
+  display: none;
+}
+
+.live-box {
+  margin-top: 50px;
+}
+
+.styled-box {
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px grey;
+  color: white;
+  margin: 25px 15px;
+  height: 200px;
+}
+
+.styled-box h3 {
+  font-size: 1.5em;
+}
+
+.styled-box p {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.deposit {
+  background-color: slateblue;
+}
+.withdraw {
+  background-color: salmon;
+}
+.balance {
+  background-color: orange;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- login area starts from here -->
+    <div class="container" id="login-area" style="display: none;">
+        <h1 class="text-center">Welcome to Pioneer Bank</h1>
+        <div class="submit-area login-form">
+            <h4>Login</h4>
+            <p id="result" role="alert"></p>
+            <input type="text" class="form-control" placeholder="Username" id="username">
+            <input type="password" class="form-control" placeholder="Password" id="password">
+            <button class="btn btn-success" id="login-btn">Enter Now</button>
+        </div>
+    </div>
+    <!-- login area ends here -->
+
+    <!-- transaction area starts from here -->
+    <div class="container" id="transaction-area" style="display: block;">
+        <h1 class="text-center">Welcome to Pioneer Bank</h1>
+        <br>
+        <h3 class="text-center">Transaction Area</h3>
+        <div class="row live-box">
+            <div class="col-md-4">
+                <div class="styled-box deposit">
+                    <h3>Deposit</h3>
+                    <p>$ <span id="curr-deposit">00</span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="styled-box withdraw">
+                    <h3>Withdraw</h3>
+                    <p>$ <span id="curr-withdraw">00</span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="styled-box balance">
+                    <h3>Balance</h3>
+                    <p>$ <span id="total-balance">1240</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h3>Deposit</h3>
+                    <input type="text" placeholder="$ amount you want to deposit" class="form-control" id="deposit-amt">
+                    <button class="btn btn-success" id="deposit-btn">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h3>Withdraw</h3>
+                    <input type="text" placeholder="$ amount you want to withdraw" class="form-control"
+                        id="withdraw-amt">
+                    <button class="btn btn-danger" id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- transaction area ends here -->
+
+    <!-- javascript starts here -->
+    <script src="app.js"></script>
+</body>
+
+</html>
